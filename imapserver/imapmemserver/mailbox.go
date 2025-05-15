@@ -315,9 +315,8 @@ func (mbox *MailboxView) Search(numKind imapserver.NumKind, criteria *imap.Searc
 
 	mbox.staticSearchCriteria(criteria)
 
-	data := imap.SearchData{UID: numKind == imapserver.NumKindUID}
-
 	var (
+		data   imap.SearchData
 		seqSet imap.SeqSet
 		uidSet imap.UIDSet
 	)
