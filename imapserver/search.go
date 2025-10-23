@@ -308,7 +308,7 @@ func readSearchKeyWithAtom(criteria *imap.SearchCriteria, dec *imapwire.Decoder,
 		}
 		var not imap.SearchCriteria
 		if err := readSearchKey(&not, dec); err != nil {
-			return nil
+			return err
 		}
 		criteria.Not = append(criteria.Not, not)
 	case "OR":
@@ -317,13 +317,13 @@ func readSearchKeyWithAtom(criteria *imap.SearchCriteria, dec *imapwire.Decoder,
 		}
 		var or [2]imap.SearchCriteria
 		if err := readSearchKey(&or[0], dec); err != nil {
-			return nil
+			return err
 		}
 		if !dec.ExpectSP() {
 			return dec.Err()
 		}
 		if err := readSearchKey(&or[1], dec); err != nil {
-			return nil
+			return err
 		}
 		criteria.Or = append(criteria.Or, or)
 	case "$":
