@@ -1,18 +1,18 @@
 # go-imap
 
-[![godocs.io](https://godocs.io/github.com/emersion/go-imap?status.svg)](https://godocs.io/github.com/emersion/go-imap)
-[![builds.sr.ht status](https://builds.sr.ht/~emersion/go-imap/commits/master.svg)](https://builds.sr.ht/~emersion/go-imap/commits/master?)
+[![Go Reference](https://pkg.go.dev/badge/github.com/uatuko/go-imap.svg)](https://pkg.go.dev/github.com/uatuko/go-imap)
 
 An [IMAP4rev1](https://tools.ietf.org/html/rfc3501) library written in Go. It
 can be used to build a client and/or a server.
 
-> **Note**
-> This is the README for go-imap v1. go-imap v2 is in development, see the
-> [v2 branch](https://github.com/emersion/go-imap/tree/v2) for more details.
+
+> [!NOTE]
+> This is a fork of [emersion/go-imap](https://github.com/emersion/go-imap).
+
 
 ## Usage
 
-### Client [![godocs.io](https://godocs.io/github.com/emersion/go-imap/client?status.svg)](https://godocs.io/github.com/emersion/go-imap/client)
+### Client [![Go Reference](https://pkg.go.dev/badge/github.com/uatuko/go-imap/client.svg)](https://pkg.go.dev/github.com/uatuko/go-imap/client)
 
 ```go
 package main
@@ -20,8 +20,8 @@ package main
 import (
 	"log"
 
-	"github.com/emersion/go-imap/client"
-	"github.com/emersion/go-imap"
+	"github.com/uatuko/go-imap/client"
+	"github.com/uatuko/go-imap"
 )
 
 func main() {
@@ -95,7 +95,7 @@ func main() {
 }
 ```
 
-### Server [![godocs.io](https://godocs.io/github.com/emersion/go-imap/server?status.svg)](https://godocs.io/github.com/emersion/go-imap/server)
+### Server [![Go Reference](https://pkg.go.dev/badge/github.com/uatuko/go-imap/server.svg)](https://pkg.go.dev/github.com/uatuko/go-imap/server)
 
 ```go
 package main
@@ -103,8 +103,8 @@ package main
 import (
 	"log"
 
-	"github.com/emersion/go-imap/server"
-	"github.com/emersion/go-imap/backend/memory"
+	"github.com/uatuko/go-imap/server"
+	"github.com/uatuko/go-imap/backend/memory"
 )
 
 func main() {
@@ -125,7 +125,7 @@ func main() {
 }
 ```
 
-You can now use `telnet localhost 1143` to manually connect to the server.
+You can now use `nc localhost 1143` to manually connect to the server.
 
 ## Extensions
 
@@ -142,40 +142,6 @@ includes:
 * [SASL-IR](https://tools.ietf.org/html/rfc4959)
 * [SPECIAL-USE](https://tools.ietf.org/html/rfc6154)
 * [UNSELECT](https://tools.ietf.org/html/rfc3691)
-
-Support for other extensions is provided via separate packages. See below.
-
-## Extending go-imap
-
-### Extensions
-
-Commands defined in IMAP extensions are available in other packages. See [the
-wiki](https://github.com/emersion/go-imap/wiki/Using-extensions#using-client-extensions)
-to learn how to use them.
-
-* [COMPRESS](https://github.com/emersion/go-imap-compress)
-* [ID](https://github.com/ProtonMail/go-imap-id)
-* [METADATA](https://github.com/emersion/go-imap-metadata)
-* [NAMESPACE](https://github.com/foxcpp/go-imap-namespace)
-* [QUOTA](https://github.com/emersion/go-imap-quota)
-* [SORT and THREAD](https://github.com/emersion/go-imap-sortthread)
-* [UIDPLUS](https://github.com/emersion/go-imap-uidplus)
-
-### Server backends
-
-* [Memory](https://github.com/emersion/go-imap/tree/master/backend/memory) (for testing)
-* [Multi](https://github.com/emersion/go-imap-multi)
-* [PGP](https://github.com/emersion/go-imap-pgp)
-* [Proxy](https://github.com/emersion/go-imap-proxy)
-* [Notmuch](https://github.com/stbenjam/go-imap-notmuch) - Experimental gateway for [Notmuch](https://notmuchmail.org/)
-
-### Related projects
-
-* [go-message](https://github.com/emersion/go-message) - parsing and formatting MIME and mail messages
-* [go-msgauth](https://github.com/emersion/go-msgauth) - handle DKIM, DMARC and Authentication-Results
-* [go-pgpmail](https://github.com/emersion/go-pgpmail) - decrypting and encrypting mails with OpenPGP
-* [go-sasl](https://github.com/emersion/go-sasl) - sending and receiving SASL authentications
-* [go-smtp](https://github.com/emersion/go-smtp) - building SMTP clients and servers
 
 ## License
 
