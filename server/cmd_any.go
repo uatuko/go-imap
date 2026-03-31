@@ -1,10 +1,10 @@
 package server
 
 import (
-	"github.com/emersion/go-imap"
-	"github.com/emersion/go-imap/backend"
-	"github.com/emersion/go-imap/commands"
-	"github.com/emersion/go-imap/responses"
+	"github.com/uatuko/go-imap"
+	"github.com/uatuko/go-imap/backend"
+	"github.com/uatuko/go-imap/commands"
+	"github.com/uatuko/go-imap/responses"
 )
 
 type Capability struct {
