@@ -1,7 +1,7 @@
-github.com/emersion/go-sasl v0.0.0-20200509203442-7bfe0ed36a21 h1:OJyUGMJTzHTd1XQp98QTaHernxMYzRaOasRir9hUlFQ=
-github.com/emersion/go-sasl v0.0.0-20200509203442-7bfe0ed36a21/go.mod h1:iL2twTeMvZnrg54ZoPDNfJaJaqy0xIQFuBdrLsmspwQ=
 github.com/uatuko/go-message v0.0.0-20260207011037-1810a5338015 h1:9lOsidUBpeqtZG2alF8REemB5udUHsczJARUwvACM04=
 github.com/uatuko/go-message v0.0.0-20260207011037-1810a5338015/go.mod h1:PYasjbd2YoMWzqRI86QrsCqAhfwvgDv4jWiXT4r5Rtk=
+github.com/uatuko/go-sasl v0.0.0-20260404093346-e0528a7a28f1 h1:062K7vOrURZsF4mAiahcw/vC4iP7Pze+lBldEsnD+Qs=
+github.com/uatuko/go-sasl v0.0.0-20260404093346-e0528a7a28f1/go.mod h1:tKU+3oZKv6epXZzYigUQMbBeja+s5lVDSp4Rrzs8Zhc=
 github.com/yuin/goldmark v1.4.13/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20210921155107-089bfa567519/go.mod h1:GvvjBRRGRdwPK5ydBHafDWAxML/pGHZbMvKqRZ5+Abc=

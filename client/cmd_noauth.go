@@ -8,7 +8,7 @@ import (
 	"github.com/uatuko/go-imap"
 	"github.com/uatuko/go-imap/commands"
 	"github.com/uatuko/go-imap/responses"
-	"github.com/emersion/go-sasl"
+	"github.com/uatuko/go-sasl"
 )
 
 var (

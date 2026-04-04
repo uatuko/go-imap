@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 
 	"github.com/uatuko/go-imap"
-	"github.com/emersion/go-sasl"
+	"github.com/uatuko/go-sasl"
 )
 
 // An AUTHENTICATE response.

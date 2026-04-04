@@ -7,7 +7,7 @@ import (
 
 	"github.com/uatuko/go-imap"
 	"github.com/uatuko/go-imap/commands"
-	"github.com/emersion/go-sasl"
+	"github.com/uatuko/go-sasl"
 )
 
 // IMAP errors in Not Authenticated state.
